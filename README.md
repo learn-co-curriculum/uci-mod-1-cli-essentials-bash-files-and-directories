@@ -11,7 +11,7 @@
 
 ## Introduction
 
-In the previous lesson we learned how to "navigate" the directory structure
+In the previous lesson, we learned how to "navigate" the directory structure
 of our file system. But our file systems (and lives) would be so boring
 without _files_. Copying files, moving files, reading the contents of
 files, feeding files to the `ruby` program, cat .gifs. We looooooove files.
@@ -28,9 +28,14 @@ In a new terminal, which automatically puts you in your _home directory_, try th
 $ ls
 ```
 
-The command `ls` stands for "**l**i**s**t". After you run it, you should then see a list of all the files within your working directory. True to Unix style the command is easy to type and ***short*** (both keys on the home row of a keyboard, one letter on one hand the other on the other hand, it's about as fast as it can get; handy for a command we will run _all the time_).
+The command `ls` stands for "**l**i**s**t". After you run it, you should then
+see a list of all the files within your working directory. True to Unix style,
+the command is easy to type and ***short*** (both keys on the home row of a
+keyboard, one letter on one hand, the other on the other hand, it's about as
+fast as it can get; handy for a command we will run _all the time_).
 
-We can list the contents of another directory by providing an absolute or relative path
+We can list the contents of another directory by providing an absolute or
+relative path
 
 ```bash
 $ ls pathname
@@ -38,8 +43,8 @@ $ ls pathname
 
 ### Using Flags with Commands
 
-We can use flags on most Unix commands to give more specific instructions or to change the output.
-Most programs accept flags, or options for execution.
+We can use flags on most Unix commands to give more specific instructions or to
+change the output. Most programs accept flags or options for execution.
 
 A flag is denotated by a `-` ("dash").
 
@@ -75,7 +80,7 @@ drwxr-xr-x  18 byron.poodle  wheel  576 May 21  2018 sinatra-user-auth
 ```
 
 You don't need to know what all those
-extra bits of information mean now, but realize that flags can really enrich
+extra bits of information means now, but realize that flags can really enrich
 the output you get.
 
 Single-character options can typically be combined with each other. For example,
@@ -113,10 +118,11 @@ drwxr-xr-x  13 kellyegreene  staff   442B Jun  2 11:02 .git
 Notice that at the top of the file output there are a bunch of files that start with
 a `.`, like `.DS_Store`
 
-Files like `.DS_Store` are not listed. That's because files and directories that start with a `.`
-are _hidden_ files. Shells are often configured by putting information in these _hidden_ files.
-We'll not talk about these types of files in this lesson except to say that sometimes things
-are hidden until you add a flag.
+Files like `.DS_Store` are not listed. That's because files and directories that
+start with a `.` are _hidden_ files. Shells are often configured by putting
+information in these _hidden_ files. We'll not talk about these types of files
+in this lesson except to say that sometimes things are hidden until you add a
+flag.
 
 **Note:** *Combining flags is only valid for single-letter options. A "long option"
 such as* `--force` *is defined with more than one character and must be entered with
@@ -149,10 +155,10 @@ $ mv temp_download.gif ~/Desktop/cats_with_weapons/ninja_cat.gif
 
 ## Copy Files with `cp`
 
-If you think about it, move is really "copy, but delete the original."
-Well, `cp` does a `mv`, but doesn't delete the original. It's therefore a "copy."
+If you think about it, "move" is really "copy, but delete the original."
+Well, `cp` does a `mv`, but doesn't delete the original. Therefore, it's a "copy."
 
-It uses the same snytax as `mv`:
+It uses the same syntax as `mv`:
 
 ```bash
 cp letter_to_mom.txt letter_to_mom-2019-02-15.txt
@@ -183,7 +189,7 @@ $ ls
 ```
 
 You should see the file you just created, `hello_world.rb`, in the working directory.
-Note that this is an empty file and has nothing inside of it, because you just created it.
+Note that this is an empty file and has nothing inside of it because you just created it.
 
 ## Make New Directories with `mkdir`
 
@@ -220,7 +226,10 @@ Use this with caution. This action cannot be undone!
 
 ## Conclusion
 
-There are a variety of commands you can use to manipulate files via the command line. If this list seems overwhelming at first, remember that it takes all programmers a little time to practice their CLI workflows. Refer back to these resources as you need to, and it will get easier as you go along.
+There are a variety of commands you can use to manipulate files via the command
+line. If this list seems overwhelming at first, remember that it takes all
+programmers a little time to practice their CLI workflows. Refer back to these
+resources as you need to, and it will get easier as you go along.
 
 ## Resources
 
